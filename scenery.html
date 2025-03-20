@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揭阳美景 - 魅力揭阳</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/scenery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="揭阳logo">
+                        <h1>魅力揭阳</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="food.html">揭阳美食</a></li>
+                    <li><a href="scenery.html" class="active">揭阳美景</a></li>
+                    <li><a href="culture.html">潮汕传统</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 美景页面横幅 -->
+    <section class="scenery-banner">
+        <div class="banner-content">
+            <h1>揭阳美景</h1>
+            <p>潮汕腹地，隐秘之美</p>
+        </div>
+    </section>
+
+    <!-- 景点区域（改为第一个） -->
+    <section class="travel-guide">
+        <div class="container">
+            <h2 class="section-title">揭阳美景</h2>
+            <div class="guide-intro">
+                <p class="intro-text">以下是揭阳特色景点介绍及深度旅游攻略，结合自然风光、人文体验与在地文化，助您解锁潮汕腹地的隐秘之美。</p>
+            </div>
+            
+            <div class="guide-tabs">
+                <button class="guide-tab active" data-guide="spots">景点解析</button>
+                <button class="guide-tab" data-guide="itinerary">深度游攻略</button>
+            </div>
+            
+            <!-- 景点推荐（置于第一位且默认显示） -->
+            <div class="guide-content active" id="spots">
+                <!-- 玉湖尖笔峰 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/yuhujian1.jpg" alt="玉湖尖笔峰" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>玉湖尖笔峰</h3>
+                        <div class="spot-tags">
+                            <span class="tag">山峰</span>
+                            <span class="tag">自然景观</span>
+                            <span class="tag">揭东区</span>
+                        </div>
+                        <p class="spot-desc">火山岩地貌形成的尖峭石峰，传说明代状元林大钦曾在此苦读，峰顶可俯瞰榕江平原。秘境玩法：清晨登顶观云海，探访山腰的百年"状元泉"，品尝山民自制的石橄榄鸡汤。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市揭东区玉湖镇</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>最佳游览时间：清晨5:30-9:00（云海时段）</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-hiking"></i>
+                                <span>登山难度：中等，约1.5小时可达顶峰</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+
+                <!-- 隆江孔美稻田 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/kongmei1.jpg" alt="隆江孔美稻田" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>隆江孔美稻田</h3>
+                        <div class="spot-tags">
+                            <span class="tag">梯田</span>
+                            <span class="tag">农业景观</span>
+                            <span class="tag">惠来县</span>
+                        </div>
+                        <p class="spot-desc">连片古法耕作的水稻梯田，秋收时金黄稻浪与村中清代"四点金"民居相映成趣。深度体验：参与"稻田音乐会"、学习制作隆江绿豆饼，夜宿夯土民宿观萤火虫。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市惠来县隆江镇孔美村</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>最佳季节：9-10月（收获季）</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-moon"></i>
+                                <span>特别体验：6-8月萤火虫观赏</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 白塔望天湖 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/baitahu1.jpg" alt="白塔望天湖" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>白塔望天湖</h3>
+                        <div class="spot-tags">
+                            <span class="tag">火山湖</span>
+                            <span class="tag">生态秘境</span>
+                            <span class="tag">揭西县</span>
+                        </div>
+                        <p class="spot-desc">火山湖形成的生态秘境，湖中"水杉迷宫"冬季变红，黑天鹅与白鹭共栖。特别提示：乘竹筏探秘湖心岛，参观潮汕首家自然学校，体验植物拓染。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市揭西县白塔镇</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-sailboat"></i>
+                                <span>竹筏时间：8:00-17:00，每30分钟一班</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tree"></i>
+                                <span>最佳景观：12月-次年1月水杉红叶期</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 京溪园黄满磜瀑布 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/huangmanlan1.jpg" alt="黄满磜瀑布" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>京溪园黄满磜瀑布</h3>
+                        <div class="spot-tags">
+                            <span class="tag">瀑布群</span>
+                            <span class="tag">徒步探险</span>
+                            <span class="tag">揭西县</span>
+                        </div>
+                        <p class="spot-desc">粤东最大瀑布群，雨季形成五级落差超300米的"银河链"，晴日可见彩虹穿瀑奇观。探险路线：沿明代挑盐古道徒步，途中可见野生石斛群落。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市揭西县京溪园风景区</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-cloud-rain"></i>
+                                <span>最佳时节：4-9月雨季水量充沛</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-shoe-prints"></i>
+                                <span>徒步提示：需备防滑鞋，全程约3小时</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 新西河水库 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/xinxihe1.jpg" alt="新西河水库" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>新西河水库</h3>
+                        <div class="spot-tags">
+                            <span class="tag">水利工程</span>
+                            <span class="tag">骑行胜地</span>
+                            <span class="tag">普宁市</span>
+                        </div>
+                        <p class="spot-desc">1958年建成的"岭南红旗渠"，水杉大道秋冬变色，库区保留计划经济时代粮仓遗址。玩法：骑行环湖绿道，探访水库建设者口述历史馆，品尝水库鲜鱼宴。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市普宁市新西河水库风景区</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-bicycle"></i>
+                                <span>骑行：环湖绿道全长18公里</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>美食：水边农家乐可预订鲜鱼宴</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 惠城葵阳公园 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/kuiyang1.jpg" alt="葵阳公园" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>惠城葵阳公园</h3>
+                        <div class="spot-tags">
+                            <span class="tag">海滨公园</span>
+                            <span class="tag">历史遗址</span>
+                            <span class="tag">惠来县</span>
+                        </div>
+                        <p class="spot-desc">明代抗倭烽火台遗址改建的海滨公园，8月向日葵花海与南海日落同框。隐藏彩蛋：退潮时可见海底明代沉船瓷片散布区（需本地向导带领）。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市惠来县惠城镇</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>最佳时间：日落前2小时</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-camera"></i>
+                                <span>摄影点：烽火台遗址观景台</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+
+                <!-- 占陇练江流域 -->
+                <div class="spot-card">
+                    <div class="spot-slider">
+                        <img src="./images/scenery/lianjiang1.jpg" alt="练江湿地公园" class="active-slide">
+                        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="slide-indicator">1/2</div>
+                    </div>
+                    <div class="spot-info">
+                        <h3>占陇练江流域</h3>
+                        <div class="spot-tags">
+                            <span class="tag">湿地公园</span>
+                            <span class="tag">生态治理</span>
+                            <span class="tag">普宁市</span>
+                        </div>
+                        <p class="spot-desc">生态治理典范工程，沿岸12公里湿地公园可观测白腰雨燕等珍稀鸟类。特别体验：乘坐太阳能游船，参观水处理科普馆，夜观"江雾灯光秀"。</p>
+                        <div class="visit-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>地址：揭阳市普宁市占陇镇</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-ship"></i>
+                                <span>游船：10:00-16:00，每小时一班</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-moon"></i>
+                                <span>灯光秀：每晚19:30（周末及节假日）</span>
+                            </div>
+                        </div>
+                        <button class="btn-details">查看详情</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 游玩攻略（置于第二位） -->
+            <div class="guide-content" id="itinerary">
+                <!-- 五日深度游内容 -->
+                <div class="itinerary-overview">
+                    <h3>五日深度游行程安排</h3>
+                    <p>这份为期五天的深度游攻略兼顾自然奇观与人文厚度，既可感受潮汕大地的山水灵秀，又能深入体验独特的民俗生命力。</p>
+                    
+                    <div class="day-plans">
+                        <div class="day-plan">
+                            <h4>Day 1 - 文化启程</h4>
+                            <ul class="plan-details">
+                                <li><span class="time">上午</span>惠城葵阳公园（观海赏葵）- 隆江镇（猪脚饭发源地午餐）</li>
+                                <li><span class="time">下午</span>孔美稻田（农耕体验）- 宿隆江夯土民宿</li>
+                                <li><span class="time">夜游</span>稻田星空摄影/萤火虫观测</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="day-plan">
+                            <h4>Day 2 - 山水探秘</h4>
+                            <ul class="plan-details">
+                                <li><span class="time">上午</span>玉湖尖笔峰登山 - 状元泉茶歇</li>
+                                <li><span class="time">下午</span>新西河水库骑行 - 粮仓遗址探访</li>
+                                <li><span class="time">晚餐</span>水库全鱼宴（剁椒鱼头+河虾粥）</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="day-plan">
+                            <h4>Day 3 - 生态奇迹</h4>
+                            <ul class="plan-details">
+                                <li><span class="time">全天</span>京溪园黄满磜瀑布群徒步（含古道探秘）</li>
+                                <li><span class="time">特别安排</span>瀑布茶席（潮汕工夫茶+客家擂茶体验）</li>
+                                <li><span class="time">夜宿</span>揭西温泉酒店（体验草药浴）</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="day-plan">
+                            <h4>Day 4 - 古今对话</h4>
+                            <ul class="plan-details">
+                                <li><span class="time">上午</span>白塔望天湖竹筏游 - 自然学校手作</li>
+                                <li><span class="time">下午</span>占陇练江湿地观鸟 - 水治理科技体验</li>
+                                <li><span class="time">晚餐</span>普宁豆干宴（炸豆干+豆浆火锅）</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="day-plan">
+                            <h4>Day 5 - 在地生活</h4>
+                            <ul class="plan-details">
+                                <li><span class="time">上午</span>揭阳古城（学甲堂看青狮表演）- 阳美玉器市场淘宝</li>
+                                <li><span class="time">下午</span>锡场镇营老爷文化馆（DIY神轿模型）- 返程</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guide-content" id="food">
+                <!-- 在地美食地图内容 -->
+                <div class="food-map">
+                    <h3>在地美食地图</h3>
+                    <div class="food-locations">
+                        <div class="food-location">
+                            <h4><i class="fas fa-map-marker-alt"></i> 隆江镇</h4>
+                            <ul>
+                                <li>猪脚饭（推荐"阿深猪脚"）</li>
+                                <li>绿豆饼</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="food-location">
+                            <h4><i class="fas fa-map-marker-alt"></i> 京溪园</h4>
+                            <ul>
+                                <li>客家擂茶</li>
+                                <li>苦笋煲</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="food-location">
+                            <h4><i class="fas fa-map-marker-alt"></i> 白塔镇</h4>
+                            <ul>
+                                <li>望天湖鱼生</li>
+                                <li>石橄榄炖汤</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="food-location">
+                            <h4><i class="fas fa-map-marker-alt"></i> 占陇镇</h4>
+                            <ul>
+                                <li>练江盐水蚬</li>
+                                <li>普宁豆酱焗鸡</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guide-content" id="tips">
+                <!-- 实用贴士内容 -->
+                <div class="travel-tips">
+                    <h3>实用贴士</h3>
+                    <div class="tips-grid">
+                        <div class="tip-box">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>最佳季节</h4>
+                            <p>10-11月（稻黄/水杉红/瀑布丰水）</p>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <i class="fas fa-car"></i>
+                            <h4>交通建议</h4>
+                            <p>各景点分散，推荐租车自驾（揭阳高铁站可提车）</p>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <i class="fas fa-theater-masks"></i>
+                            <h4>非遗体验</h4>
+                            <p>提前3天预约青狮表演/英歌教学（通过"揭阳文旅"公众号）</p>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>生态提示</h4>
+                            <p>黄满磜瀑布区需备防滑溯溪鞋，雨季部分路段限行</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tips-note">
+                        <p>建议预留弹性时间，偶遇乡间"营老爷"巡游或英歌排练，或许会成为旅途中最难忘的文化邂逅。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 摄影指南 -->
+    <section class="photo-guide">
+        <div class="container">
+            <h2 class="section-title">摄影指南</h2>
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3>最佳拍摄时间与位置</h3>
+                    <div class="guide-tips">
+                        <div class="tip-item">
+                            <i class="fas fa-sun"></i>
+                            <h4>黄金时段</h4>
+                            <p>清晨6:00-8:00（云海），傍晚17:00-19:00（金色稻田）</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-camera"></i>
+                            <h4>推荐机位</h4>
+                            <p>玉湖尖笔峰顶、黄满磜瀑布观景台、白塔湖心岛</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-star"></i>
+                            <h4>特色主题</h4>
+                            <p>乡村晨雾、稻田农耕、古建筑与现代生活的交融</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-gallery">
+                    <img src="images/scenery/photo1.jpg" alt="摄影作品-晨雾">
+                    <img src="images/scenery/photo2.jpg" alt="摄影作品-日落">
+                    <img src="images/scenery/photo3.jpg" alt="摄影作品-瀑布">
+                    <img src="images/scenery/photo4.jpg" alt="摄影作品-民居">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="揭阳logo">
+                    <h3>魅力揭阳</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>网站导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="food.html">揭阳美食</a></li>
+                        <li><a href="scenery.html">揭阳美景</a></li>
+                        <li><a href="culture.html">潮汕传统</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="fas fa-envelope"></i>Reduskfoxmail.com</p>
+                    <p><i class="fas fa-phone"></i>15089361245</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 魅力揭阳 - 潮汕文化之窗. 保留所有权利.</p>
+                <p>&copy; 注：本站所有图片视频来源于网络，如有侵权，请联系删除。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/scenery.js"></script>
+</body>
+</html>

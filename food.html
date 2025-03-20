@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揭阳美食 - 魅力揭阳</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="揭阳logo">
+                        <h1>魅力揭阳</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="food.html" class="active">揭阳美食</a></li>
+                    <li><a href="scenery.html">揭阳美景</a></li>
+                    <li><a href="culture.html">潮汕传统</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 美食页面横幅 -->
+    <section class="food-banner">
+        <div class="banner-content">
+            <h1>揭阳美食</h1>
+            <p>品味潮汕，寻味揭阳</p>
+        </div>
+    </section>
+
+    <!-- 美食分类导航 -->
+    <section class="food-nav">
+        <div class="container">
+            <ul class="food-categories">
+                <li><a href="#local-specialties" class="active">地方特色</a></li>
+                <li><a href="#snacks">特色小吃</a></li>
+                <li><a href="#seafood">海鲜美食</a></li>
+                <li><a href="#desserts">传统糕点</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 地方特色 -->
+    <section id="local-specialties" class="food-section">
+        <div class="container">
+            <h2 class="section-title">地方特色</h2>
+            <div class="food-grid">
+                <!-- 潮汕牛肉丸 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/nrouw.jpg" alt="潮汕牛肉丸">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕牛肉丸</h3>
+                        <div class="food-tags">
+                            <span class="tag">招牌美食</span>
+                            <span class="tag">传统工艺</span>
+                        </div>
+                        <p class="food-desc">潮汕牛肉丸以新鲜牛肉手打制成，口感弹牙，汤汁鲜美。每一颗都凝聚着潮汕人的匠心精神。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>最佳食用季节：全年</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：老字号牛肉丸店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 揭阳炒粿条 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/food/shichaoguotiao.png" alt="揭阳炒粿条">
+                    </div>
+                    <div class="food-info">
+                        <h3>揭阳炒粿条</h3>
+                        <div class="food-tags">
+                            <span class="tag">街头小吃</span>
+                            <span class="tag">特色美食</span>
+                        </div>
+                        <p class="food-desc">揭阳炒粿条选用上等米粿，配以新鲜豆芽、韭黄等食材，口感爽滑，香气四溢。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>最佳食用时间：早餐/夜宵</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：老街粿条店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕卤鹅 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/lue.jpg" alt="潮汕卤鹅">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕卤鹅</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统名菜</span>
+                            <span class="tag">特色卤味</span>
+                        </div>
+                        <p class="food-desc">潮汕卤鹅是潮汕地区的传统名菜，选用本地优质鹅只，经过特制卤水浸泡入味。卤水中加入多种中草药和香料，使卤鹅肉质鲜嫩，香气四溢，肥而不腻。卤鹅皮爽肉滑，咸香适口，是潮汕筵席上的必备佳肴，也是馈赠亲友的上等礼品。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>特色吃法：蘸沙茶酱或蒜泥</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：榕城老字号卤味店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色小吃 -->
+    <section id="snacks" class="food-section">
+        <div class="container">
+            <h2 class="section-title">特色小吃</h2>
+            <div class="food-grid">
+                <!-- 潮汕咸水粿 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/xishuiguo.jpg" alt="潮汕咸水粿">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕咸水粿</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统小吃</span>
+                            <span class="tag">早餐美食</span>
+                        </div>
+                        <p class="food-desc">潮汕咸水粿是潮汕地区传统的特色小吃，以优质米浆为主料，加入适量盐水制成。口感软糯清香，搭配萝卜干、虾皮、花生粉等配料，风味独特。是潮汕人最爱的早餐选择之一。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>特色：软糯可口，咸香适中</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老街早餐店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕肠粉 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/changfeng.jpg" alt="潮汕肠粉">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕肠粉</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统小吃</span>
+                            <span class="tag">早点美食</span>
+                        </div>
+                        <p class="food-desc">潮汕肠粉选用上等米浆，现场蒸制，薄如蝉翼，晶莹剔透。配以特制酱料、花生碎、芝麻等，口感滑嫩，香甜可口。是潮汕人钟爱的传统早点之一。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>特色：薄滑爽口，配料丰富</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老街肠粉店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕蚝烙 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/aholou.jpg" alt="潮汕蚝烙">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕蚝烙</h3>
+                        <div class="food-tags">
+                            <span class="tag">海鲜小吃</span>
+                            <span class="tag">特色美食</span>
+                        </div>
+                        <p class="food-desc">潮汕蚝烙是一道以新鲜牡蛎为主料的特色小吃，将牡蛎与粘米粉调制成面糊，加入韭菜等配料，煎制成金黄色的饼。外酥内软，蚝味浓郁，是潮汕地区著名的海鲜小吃。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-fish"></i>
+                                <span>主料：新鲜牡蛎、粘米粉</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳海鲜小吃街</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕鱼丸 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/yuwan.png" alt="潮汕鱼丸">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕鱼丸</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统小吃</span>
+                            <span class="tag">特色美食</span>
+                        </div>
+                        <p class="food-desc">潮汕鱼丸是潮汕地区的传统名小吃，选用新鲜的鱼肉手工制作而成。制作过程中不添加任何淀粉，保持了鱼肉的原汁原味。鱼丸煮熟后呈现半透明状，口感弹嫩，鲜香可口。通常配以清汤或加入粿条、米粉等一同食用，是潮汕人日常生活中不可或缺的美食。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-fish"></i>
+                                <span>主要原料：新鲜鱼肉（多用马鲛鱼）</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老市场鱼丸店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕粿肉 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/gourou.jpg" alt="潮汕粿肉">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕粿肉</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统小吃</span>
+                            <span class="tag">早餐美食</span>
+                        </div>
+                        <p class="food-desc">潮汕粿肉是潮汕地区特色传统小吃，以新鲜猪肉和米浆为主要原料。米浆制成的粿皮薄而透亮，包裹着鲜美的猪肉馅，蒸熟后软糯可口，搭配特制酱料，香味浓郁。是潮汕人早餐和茶点的首选美食之一。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>特色：皮薄馅多，软糯鲜香</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老街早餐店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 反沙芋头 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/fanshayutou.jpg" alt="反沙芋头">
+                    </div>
+                    <div class="food-info">
+                        <h3>反沙芋头</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统甜点</span>
+                            <span class="tag">特色小吃</span>
+                        </div>
+                        <p class="food-desc">反沙芋头是潮汕地区著名的传统甜点，选用优质芋头为主料，经过特殊工艺处理，使芋头呈现出独特的"反沙"口感。外酥内软，入口即化，带有淡淡的奶香和芋香，甜而不腻。是潮汕人茶余饭后的美味点心。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-cookie"></i>
+                                <span>特色：外酥内软，香甜可口</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老字号甜品店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 海鲜美食 -->
+    <section id="seafood" class="food-section">
+        <div class="container">
+            <h2 class="section-title">海鲜美食</h2>
+            <div class="food-grid">
+                <!-- 潮汕生腌 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/shengyan.jpg" alt="潮汕生腌">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕生腌</h3>
+                        <div class="food-tags">
+                            <span class="tag">海鲜美食</span>
+                            <span class="tag">潮汕特色</span>
+                        </div>
+                        <p class="food-desc">「潮汕生腌」被誉为潮汕人的"毒药"，起初是居民为了保存海鲜的新鲜和美味，开始使用腌料对海鲜进行腌制，从而形成了生腌。腌，是指以鼓油为底，加入葱姜蒜、鱼露、辣椒、芫荽、麻油等按照一定比例调成腌料，倒入海鲜中，冷藏几个小时即可。生腌的口感独特，既有新鲜海鲜的细腻，又有腌制后的醇厚，还有调料的辛辣。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-fish"></i>
+                                <span>主要原料：新鲜虾、蟹、贝类等海鲜</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳海鲜市场老字号店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 达濠鱼饭 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/yufan.jpg" alt="达濠鱼饭">
+                    </div>
+                    <div class="food-info">
+                        <h3>达濠鱼饭</h3>
+                        <div class="food-tags">
+                            <span class="tag">海鲜美食</span>
+                            <span class="tag">传统美食</span>
+                        </div>
+                        <p class="food-desc">「达濠鱼饭」其实不是"饭"，而是"蒸熟的鱼"。潮汕的渔民在海面上没有米饭，而鱼肉可代替米饭，于是"以鱼当饭"便逐渐保留下来。鱼饭的食材只有两种：最新鲜的海鱼和海盐。放入竹笼，煮熟或者蒸熟。原生态的制作技艺，蕴含潮汕沿海先民的智慧，体现潮汕饮食文化"擅烹海鲜、原汁原味、制作精巧"的特点。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-fish"></i>
+                                <span>主要原料：新鲜海鱼、海盐</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：达濠渔港老字号店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 传统糕点 -->
+    <section id="desserts" class="food-section">
+        <div class="container">
+            <h2 class="section-title">传统糕点</h2>
+            <div class="food-grid">
+                <!-- 潮式勝饼 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/tenping.jpg" alt="潮式勝饼">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮式勝饼</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统糕点</span>
+                            <span class="tag">潮汕特色</span>
+                        </div>
+                        <p class="food-desc">「勝(láo)饼」是广东潮汕一带的汉族传统名饼食，也是全国闻名的五种风味系列饼食之一。勝饼分为皮和馅两部分，皮是用猪油、面粉、糖混合而成，馅是用绿豆沙、白糖、猪油组成，也有用芝麻、黑豆沙做馅的。吃起来皮薄酥、馅香甜，脆软、馅厚润滑、肥而不腻，很受潮汕长辈的喜爱。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-history"></i>
+                                <span>历史渊源：潮汕传统名点，历史悠久</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：老字号潮式饼店</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕红桃粿 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/hongtoguo.jpg" alt="潮汕红桃粿">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕红桃粿</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统糕点</span>
+                            <span class="tag">节庆食品</span>
+                        </div>
+                        <p class="food-desc">「红桃粿」，红桃粿的名字来源于它的形状像桃子，而且外表是红色的所以被称为"红桃粿"。它是一种以糯米粉为主要原料，再加上芋头、红糖、花生、绿豆等多种食材制成的小吃。红桃粿，粿形像寿桃，寓意健康长寿、吉祥兴旺，是潮汕人时年八节拜老爷必不可少的粿品。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>传统节日：春节、重阳节等传统节日</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：潮汕老字号糕点铺</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+
+                <!-- 潮汕绿豆饼 -->
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="./images/food/lvdoub.png" alt="潮汕绿豆饼">
+                    </div>
+                    <div class="food-info">
+                        <h3>潮汕绿豆饼</h3>
+                        <div class="food-tags">
+                            <span class="tag">传统糕点</span>
+                            <span class="tag">特色美食</span>
+                        </div>
+                        <p class="food-desc">潮汕绿豆饼是一道传统的潮汕特色糕点，以优质绿豆为主料，配以白糖、猪油等辅料精制而成。外皮金黄酥脆，内馅绵密香甜，入口即化。绿豆饼不仅味美可口，还具有清热解暑的功效，是潮汕地区深受欢迎的传统糕点。每一口都能品尝到浓郁的绿豆香和精湛的制作工艺。</p>
+                        <div class="food-details">
+                            <div class="detail-item">
+                                <i class="fas fa-cookie"></i>
+                                <span>特色：外酥内软，绿豆香浓</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>推荐店铺：揭阳老街传统糕点铺</span>
+                            </div>
+                        </div>
+                        <button class="btn-more">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食地图 -->
+    <section class="food-map">
+        <div class="container">
+            <h2 class="section-title">美食地图</h2>
+            <img src="./images/scenery/meisdit.png" alt="美食地图" class="active-slide">
+            <div class="map-container">
+                <div id="food-map-canvas"></div>
+                <div class="map-sidebar">
+                    <h3>推荐美食街区</h3>
+                    <ul class="food-locations">
+                        <li>
+                            <h4>榕城老街</h4>
+                            <p>传统小吃聚集地，品尝地道潮汕美食的首选之地</p>
+                        </li>
+                        <li>
+                            <h4>揭阳夜市</h4>
+                            <p>汇集各类特色小吃，感受揭阳夜生活的魅力</p>
+                        </li>
+                        <li>
+                            <h4>榕江美食街</h4>
+                            <p>临江而建，以海鲜美食为主，环境优美</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食文化 -->
+    <section class="food-culture">
+        <div class="container">
+            <h2 class="section-title">美食文化</h2>
+            <div class="culture-content">
+                <div class="culture-text">
+                    <p>揭阳美食承载着深厚的文化底蕴，每一道菜品都诉说着一个动人的故事。从食材的选择到烹饪的技艺，都体现着潮汕人对美食的追求与匠心。</p>
+                    <p>潮汕菜以其"鲜、咸、淡"的特色著称，注重原汁原味，讲究火候掌控，体现了"以形补形，以味养生"的饮食理念。</p>
+                </div>
+                <div class="culture-image">
+                    <img src="images/food/wenhua.jpg" alt="潮汕美食文化">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="揭阳logo">
+                    <h3>魅力揭阳</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>网站导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="food.html">揭阳美食</a></li>
+                        <li><a href="scenery.html">揭阳美景</a></li>
+                        <li><a href="culture.html">潮汕传统</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="fas fa-envelope"></i>Reduskfoxmail.com</p>
+                    <p><i class="fas fa-phone"></i>15089361245</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 魅力揭阳 - 潮汕文化之窗. 保留所有权利.</p>
+                <p>&copy; 注：本站所有图片视频来源于网络，如有侵权，请联系删除。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/food.js"></script>
+</body>
+</html> 

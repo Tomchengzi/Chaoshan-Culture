@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魅力揭阳 - 潮汕文化之窗</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="揭阳logo">
+                        <h1>魅力揭阳</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="food.html">揭阳美食</a></li>
+                    <li><a href="scenery.html">揭阳美景</a></li>
+                    <li><a href="culture.html">潮汕传统</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页轮播图 -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="./images/slider/jyxihu.png" alt="榕江风光">
+                <div class="slide-content">
+                    <h2>榕江风光</h2>
+                    <p>揭阳榕江，潮汕文化的母亲河</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slider/xuegong.png" alt="揭阳学宫">
+                <div class="slide-content">
+                    <h2>揭阳学宫</h2>
+                    <p>岭南地区保存最完好的古代学府</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/feiyi.jpg" alt="潮汕文化">
+                <div class="slide-content">
+                    <h2>潮汕文化</h2>
+                    <p>千年传承，独具特色的地方文化</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- 揭阳简介 -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title">揭阳简介</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>揭阳，广东省地级市，位于广东省东部沿海，潮汕平原东北部，是粤东政治、经济、文化中心之一。揭阳历史悠久，文化灿烂，是潮汕文化的重要发源地之一。</p>
+                    <p>这里山清水秀，人杰地灵，拥有榕江风光、揭阳学宫、葵潭古村等众多自然和人文景观。揭阳还是著名的美食之乡，潮汕牛肉丸、揭阳炒粿条等美食闻名遐迩。</p>
+                    <p>揭阳人民勤劳智慧，创造了独具特色的潮汕文化，工夫茶、潮剧、潮汕方言等文化瑰宝在这里代代相传，焕发着永恒的魅力。</p>
+                </div>
+                <div class="intro-image">
+                    <img src="images/jieyang-overview.jpg" alt="揭阳全景">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容预览卡片 -->
+    <section class="preview-cards">
+        <div class="container">
+            <h2 class="section-title">探索揭阳</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/slider/nrouw.jpg" alt="揭阳美食">
+                    </div>
+                    <div class="card-content">
+                        <h3>揭阳美食</h3>
+                        <p>品尝潮汕牛肉丸、揭阳炒粿条等地道美食，感受舌尖上的揭阳。</p>
+                        <a href="food.html" class="btn">了解更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/slider/scenery.jpg" alt="揭阳美景">
+                    </div>
+                    <div class="card-content">
+                        <h3>揭阳美景</h3>
+                        <p>探索榕江风光、揭阳学宫、葵潭古村等自然人文景观。</p>
+                        <a href="scenery.html" class="btn">了解更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/slider/gongfucha.jpeg" alt="潮汕传统">
+                    </div>
+                    <div class="card-content">
+                        <h3>潮汕传统</h3>
+                        <p>体验工夫茶、潮剧、潮汕方言等独特的潮汕文化传统。</p>
+                        <a href="culture.html" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="揭阳logo">
+                    <h3>魅力揭阳</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>网站导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="food.html">揭阳美食</a></li>
+                        <li><a href="scenery.html">揭阳美景</a></li>
+                        <li><a href="culture.html">潮汕传统</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="fas fa-envelope"></i>Reduskfoxmail.com</p>
+                    <p><i class="fas fa-phone"></i>15089361245</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 魅力揭阳 - 潮汕文化之窗. 保留所有权利.</p>
+                <p>&copy; 注：本站所有图片视频来源于网络，如有侵权，请联系删除。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揭阳文化LOGO</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fff;
+            margin: 0;
+        }
+
+        /* 核心文字设计 */
+        .jieyang-logo {
+            font-family: 'STKaiti', 'KaiTi', 'SimKai', serif; /* 古风字体选择 */
+            font-size: 6em;
+            position: relative;
+            display: inline-block;
+            padding: 0 1rem;
+        }
+
+        /* 文字分割设计 */
+        .jieyang-logo span {
+            position: relative;
+            display: inline-block;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* 揭字：上青下朱 */
+        .jie {
+            background: linear-gradient(to bottom, #4a707a 50%, #c3272b 50%);
+            padding-right: 0.3em;
+        }
+
+        /* 阳字：左金右墨 */
+        .yang {
+            background: linear-gradient(to right, #d4af37 50%, #2c3e50 50%);
+            padding-left: 0.3em;
+        }
+
+        /* 青狮图腾 */
+        .lion-element {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: 
+                linear-gradient(45deg, 
+                    transparent 42%, 
+                    #c3272b 43%,
+                    #c3272b 57%,
+                    transparent 58%),
+                radial-gradient(circle at 50% 30%, #d4af37 25%, transparent 26%);
+            transform: rotate(25deg);
+            left: -8%;
+            top: 20%;
+        }
+
+        @keyframes flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* 悬停动效 */
+        .logo-container:hover .jieyang-logo {
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="cultural-elements">
+            <div class="wood-pattern"></div>
+            <div class="lion-element"></div>
+            <div class="water-flow"></div>
+        </div>
+        <div class="jieyang-logo">
+            <span class="jie">揭</span>
+            <span class="yang">阳</span>
+        </div>
+    </div>
+</body>
+</html>
